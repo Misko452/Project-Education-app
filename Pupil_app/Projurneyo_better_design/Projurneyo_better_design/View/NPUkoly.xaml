@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.NPUkoly"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projurneyo_better_design.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+            <Label HorizontalAlignment="Left" Content="Vytvoř úkoly do projektu" Margin="67,57,0,651" FontSize="36" Width="408" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.144"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.664"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+
+        </Border>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="BtnAddUkol" Content="+" HorizontalAlignment="Left"
+                    Margin="110,190,0,0" VerticalAlignment="Top" Height="131"
+                    Width="126" Click="BtnAddUkol_Click" FontSize="36" 
+                    FontWeight="Bold" BorderThickness="10" 
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center" BorderBrush="#FF0ABC00" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="8"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button x:Name="BtnRemoveUkol" Content="-" 
+                    HorizontalAlignment="Left" Margin="304,190,0,0"
+                    VerticalAlignment="Top" Height="131" Width="126"
+                    Click="BtnRemoveUkol_Click" IsEnabled="false" FontSize="36"
+                    FontWeight="Bold" BorderThickness="10" 
+                    VerticalContentAlignment="Center"
+                    HorizontalContentAlignment="Center" BorderBrush="#FFBC0000">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="8"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <TextBox x:Name="Ukol" Text="Název úkolu..." ScrollViewer.HorizontalScrollBarVisibility="Auto" Foreground="#FF868686" VerticalAlignment="Top" Margin="34,575,572,0" Height="48" FontSize="24" GotFocus="Ukol_GotFocus" LostFocus="Ukol_LostFocus" />
+            <ComboBox x:Name="CmbxTypUkolu" Margin="36,654,572,79" BorderThickness="5" FontSize="48" SelectedIndex="1" />
+
+            <Button x:Name="BtnPotvrdit" Content="Potvrdit a založit projekt"
+                    HorizontalAlignment="Left" Margin="110,378,0,0" 
+                    VerticalAlignment="Top" Height="152" Width="320" 
+                    IsEnabled="False" Click="BtnPotvrdit_Click" FontSize="24"
+                    BorderThickness="5" BorderBrush="#FF0078D7">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <ListBox x:Name="Seznam" Margin="539,27,10,27" 
+                     SelectionChanged="Seznam_SelectionChanged" 
+                     IsSynchronizedWithCurrentItem="False" 
+                     BorderBrush="#FF3468C0" BorderThickness="7" >
+                <ListBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </ListBox.Resources>
+            </ListBox>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

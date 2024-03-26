@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.UkolSwot"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Projurneyo_better_design.ViewModel"
+             xmlns:Utilities="clr-namespace:Projurneyo_better_design.Utilities"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+            
+        </Border>
+
+        <Button x:Name="Potvrd" Content="Potvrdit" Margin="438,721,438,10" 
+                BorderThickness="3" BorderBrush="#FFFF9843" 
+                Background="White" FontSize="20" FontWeight="Bold" Click="Potvrd_Click" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Grid>
+
+            <Grid>
+                <Border CornerRadius="2" Margin="24,188,574,388" 
+                            BorderThickness="5" BorderBrush="#3468C0">
+                        <RichTextBox Padding="5" BorderBrush="{x:Null}"
+                                     GotFocus="RT_GotFocus"
+                                     LostFocus="RT_LostFocus"
+                                     x:Name="S" Foreground="#FF868686"
+                                     >
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="Silné stránky..."/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </Border>
+            </Grid>
+
+
+            <Grid>
+                <Border CornerRadius="2" Margin="557,188,37,387" 
+                        BorderThickness="5" BorderBrush="#3468C0">
+                        <RichTextBox Padding="5" BorderBrush="{x:Null}"
+                                     GotFocus="RT_GotFocus"
+                                     LostFocus="RT_LostFocus"
+                                     x:Name="W" Foreground="#FF868686"
+                                     >
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="Slabé stránky..."/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </Border>
+            </Grid>
+
+            <Grid>
+                <Border CornerRadius="2" Margin="24,482,574,94" 
+                        BorderThickness="5" BorderBrush="#3468C0">
+                        <RichTextBox Padding="5" BorderBrush="{x:Null}"
+                                     GotFocus="RT_GotFocus"
+                                     LostFocus="RT_LostFocus"
+                                     x:Name="O" Foreground="#FF868686"
+                                     >
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="Příležitosti..."/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </Border>
+            </Grid>
+
+            <Grid>
+                <Border CornerRadius="2" Margin="557,482,40,94" 
+                        BorderThickness="5" BorderBrush="#3468C0">
+                        <RichTextBox BorderBrush="{x:Null}"
+                                     x:Name="T" Padding="5"
+                                     GotFocus="RT_GotFocus"
+                                     LostFocus="RT_LostFocus" Foreground="#FF868686"
+                                     >
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="Hrozby..."/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </Border>
+            </Grid>
+
+            <Border BorderThickness="5" BorderBrush="#FF3468C0" Margin="10,10,10,676" CornerRadius="10">
+                <TextBlock x:Name="Zadani" TextWrapping="Wrap" Text="Zadání úkolu" 
+Margin="5,5,5,5" FontSize="24" ScrollViewer.VerticalScrollBarVisibility="Auto" Padding="7"/>
+            </Border>
+            
+            <Border BorderBrush="Black" BorderThickness="5" Margin="529,167,543,98" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="5" Margin="534,-120,538,-161" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            
+            <TextBlock TextWrapping="Wrap" 
+                Margin="151,148,723,611" FontSize="22"
+                TextAlignment="Center" FontWeight="Bold"><Run Language="cs-cz" Text="Strenghts"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" 
+                Margin="697,148,177,611" FontSize="22"
+                TextAlignment="Center" FontWeight="Bold"><Run Language="cs-cz" Text="Weaknesses"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" 
+                Margin="151,445,723,314" FontSize="22"
+                TextAlignment="Center" FontWeight="Bold"><Run Language="cs-cz" Text="Opportunities"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" 
+                Margin="697,445,177,314" FontSize="22"
+                TextAlignment="Center" FontWeight="Bold"><Run Text="Thr"/><Run Text="eats"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" 
+                Margin="437,126,437,645" FontSize="20"
+                TextAlignment="Center"><Run Language="cs-cz" Text="SWOT analýza"/></TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>

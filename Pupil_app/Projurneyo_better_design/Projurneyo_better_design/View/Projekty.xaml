@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.Projekty"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Projurneyo_better_design.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078"
+             Style="{StaticResource Styl_Stranky}">
+
+
+    <Grid>
+
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+
+        </Border>
+        <Button Content="Projekt1" Click="Projekt_Click" x:Name="Projekt1" Background="#FFFFFF" HorizontalAlignment="Left" Margin="38,21,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFFF9843" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt2" Click="Projekt_Click" x:Name="Projekt2" Background="#FFFFFF" HorizontalAlignment="Left" Margin="394,21,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFFF8724" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt3" Click="Projekt_Click" x:Name="Projekt3" Background="#FFFFFF" HorizontalAlignment="Left" Margin="745,21,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFFF4F43" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt4" Click="Projekt_Click" x:Name="Projekt4" Background="#FFFFFF" HorizontalAlignment="Left" Margin="38,157,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFFBE314" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt5" Click="Projekt_Click" x:Name="Projekt5" Background="#FFFFFF" HorizontalAlignment="Left" Margin="394,157,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFA4FF43" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt6" Click="Projekt_Click" x:Name="Projekt6" Background="#FFFFFF" HorizontalAlignment="Left" Margin="745,157,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF7BFF43" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt7" Click="Projekt_Click" x:Name="Projekt7" Background="#FFFFFF" HorizontalAlignment="Left" Margin="38,289,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF43FFB9" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt8" Click="Projekt_Click" x:Name="Projekt8" Background="#FFFFFF" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF43FFCB" BorderThickness="5" Margin="394,289,0,0">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt9" Click="Projekt_Click" x:Name="Projekt9" Background="#FFFFFF" HorizontalAlignment="Left" Margin="745,280,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF43DCFF" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt10" Click="Projekt_Click" x:Name="Projekt10" Background="#FFFFFF" HorizontalAlignment="Left" Margin="38,417,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF43C5FF" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt11" Click="Projekt_Click" x:Name="Projekt11" Background="#FFFFFF" HorizontalAlignment="Left" Margin="394,417,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FF438BFF" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt12" Click="Projekt_Click" x:Name="Projekt12" Background="#FFFFFF" HorizontalAlignment="Left" Margin="745,417,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFA443FF" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt13" Click="Projekt_Click" x:Name="Projekt13" Background="#FFFFFF" HorizontalAlignment="Left" Margin="38,548,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFD843FF" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Projekt14" Click="Projekt_Click" x:Name="Projekt14" Background="#FFFFFF" HorizontalAlignment="Left" Margin="394,548,0,0" VerticalAlignment="Top" Height="91" Width="276" FontSize="22" FontWeight="Bold" BorderBrush="#FFFF43DA" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Image Source="/Vcelka.png" Margin="785,531,22,60" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-23.569"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+
+</UserControl>

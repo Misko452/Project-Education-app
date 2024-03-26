@@ -1,0 +1,10 @@
+C:\Users\uzivatel\Desktop\Zak_aplikace\Projurneyo_better_design.exe
+C:\Users\uzivatel\Desktop\Zak_aplikace\Projurneyo_better_design.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\Projurneyo_better_design.deps.json
+C:\Users\uzivatel\Desktop\Zak_aplikace\Projurneyo_better_design.runtimeconfig.json
+C:\Users\uzivatel\Desktop\Zak_aplikace\System.Data.SqlClient.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\runtimes\win-arm64\native\sni.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\runtimes\win-x64\native\sni.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\runtimes\win-x86\native\sni.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\uzivatel\Desktop\Zak_aplikace\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

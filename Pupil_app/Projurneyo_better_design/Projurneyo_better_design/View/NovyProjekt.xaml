@@ -1,0 +1,52 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Projurneyo_better_design.ViewModel"
+             xmlns:Utilities="clr-namespace:Projurneyo_better_design.Utilities" x:Class="Projurneyo_better_design.View.NovyProjekt"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+
+
+    <Grid>
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+            <Label Content="Vytvořit nový projekt" Margin="137,10,137,679"
+                   HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="72" Width="804"/>
+
+        </Border>
+
+        <Border Background="White" BorderBrush="#FF9843" 
+        BorderThickness="5" CornerRadius="20" Width="992" Padding="10" Margin="43,219,43,175">
+            <RichTextBox x:Name="RTpopis" Padding="10" VerticalScrollBarVisibility="auto"
+                 GotFocus="RTpopis_GotFocus"
+                 LostFocus="RTpopis_LostFocus"
+                 BorderThickness="0" Margin="5,5,9,5" FontSize="24" FontFamily="Segoe UI Historic" Foreground="#FF868686">
+                <FlowDocument>
+                    <Paragraph FontSize="16">
+                        Popiš projekt zde...
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </Border>
+
+        <Border BorderThickness="2" CornerRadius="2" BorderBrush="#FFFF6043"  Margin="43,137,43,612">
+            <TextBox x:Name="TextBoxNazev" GotFocus="TextBoxNazev_GotFocus" LostFocus="TextBoxNazev_LostFocus" BorderThickness="0" Text="Název projektu..." FontSize="28" Margin="1,0,1,0" Foreground="#FF868686"/>
+        </Border>
+
+        <Button x:Name="BtnNext" Click="BtnNext_Click" Content="Pokračovat" Background="#FFFFFF" HorizontalAlignment="Center" Margin="0,651,0,0" VerticalAlignment="Top" Height="114" Width="369" FontSize="36" FontWeight="Bold" BorderBrush="#FF3468C0" BorderThickness="5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+
+
+    </Grid>
+</UserControl>

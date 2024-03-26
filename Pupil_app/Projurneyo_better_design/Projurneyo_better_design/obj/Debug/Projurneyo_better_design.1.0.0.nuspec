@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Projurneyo_better_design</id>
+    <version>1.0.0</version>
+    <authors>Projurneyo_better_design</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="System.Data.SqlClient" version="4.8.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net6.0-windows7.0/Obrazky/favicon.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\uzivatel\source\repos\ZdenekMic\Projurneyo_better_design\Projurneyo_better_design\bin\Debug\net6.0-windows\Projurneyo_better_design.runtimeconfig.json" target="lib\net6.0-windows7.0\Projurneyo_better_design.runtimeconfig.json" />
+    <file src="C:\Users\uzivatel\source\repos\ZdenekMic\Projurneyo_better_design\Projurneyo_better_design\bin\Debug\net6.0-windows\Projurneyo_better_design.dll" target="lib\net6.0-windows7.0\Projurneyo_better_design.dll" />
+    <file src="C:\Users\uzivatel\source\repos\ZdenekMic\Projurneyo_better_design\Projurneyo_better_design\Obrazky\favicon.ico" target="content\Obrazky\favicon.ico" />
+    <file src="C:\Users\uzivatel\source\repos\ZdenekMic\Projurneyo_better_design\Projurneyo_better_design\Obrazky\favicon.ico" target="contentFiles\any\net6.0-windows7.0\Obrazky\favicon.ico" />
+  </files>
+</package>

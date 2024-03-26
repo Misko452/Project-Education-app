@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.ProjektInside"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projurneyo_better_design.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+
+    <Grid>
+
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+            <Border CornerRadius="0,0,10,0">
+                <Border.Background>
+                    <SolidColorBrush x:Name="PozadiGridu1" Color="#FFFFFF"/>
+                </Border.Background>
+
+                <Border Margin="38,207,318,10" CornerRadius="10"
+                        Padding="5"
+                        BorderBrush="#FF0079FF" BorderThickness="5">
+                    <ListBox x:Name="LstBxUkoly"
+                             d:ItemsSource="{d:SampleData ItemCount=5}" 
+                             SelectionChanged="LstBxUkoly_SelectionChanged"
+                             FontSize="20" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                </Border>
+
+            </Border>
+
+        </Border>
+
+        <Grid>
+            <Label x:Name="ProjektNazev" HorizontalContentAlignment="Center" Content="Název projektu" FontSize="36" Margin="0,10,0,730" Width="1042"/>
+
+            <Border BorderBrush="#FF002AFF" CornerRadius="6" BorderThickness="2" Margin="36,75,37,606">
+                <TextBlock x:Name="TxtBxPopis" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" Text="TextBlock" Margin="8,5,8,5" FontSize="20"/>
+            </Border>
+        </Grid>
+
+        <Button x:Name="Ukol" Content="Otevřít" Background="#FFFFFF" HorizontalAlignment="Left" Margin="792,264,0,0" VerticalAlignment="Top" Height="114" Width="254" FontSize="48" FontWeight="Bold" BorderBrush="#FFFF9843" BorderThickness="5" Click="Ukol_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Grid/>
+
+        <Image Source="/Vcelka.png" Margin="773,535,-18,-6" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-31.207"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+    </Grid>
+
+
+</UserControl>

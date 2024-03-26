@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.Leaderboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projurneyo_better_design.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0" >
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+        </Border>
+
+        <Border Margin="44,157,44,57" BorderBrush="#FF002AFF" BorderThickness="5,5,5,5" CornerRadius="5" Padding="5">
+            <ListView  x:Name="ListBx" BorderThickness="0" HorizontalAlignment="Center" FontSize="20" SelectionMode="Multiple" FontFamily="Bahnschrift" Width="970" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Název Týmu" Width="475" DisplayMemberBinding="{Binding Nazev}"/>
+                        <GridViewColumn Header="Počet XP" Width="475" TextBlock.TextAlignment="Right" DisplayMemberBinding="{Binding Xp}"/>
+                    </GridView>
+                </ListView.View>
+                <ListView.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </ListView.Resources>
+            </ListView>
+        </Border>
+
+        <Grid>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" 
+                       VerticalAlignment="Top" Padding="10"
+                       Text="Žebříček" Margin="336,23,336,0"
+                       FontSize="89" FontFamily="Bahnschrift" Height="110"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

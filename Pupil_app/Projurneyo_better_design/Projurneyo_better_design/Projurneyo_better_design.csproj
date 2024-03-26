@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Obrazky\favicon.ico</ApplicationIcon>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Back.png" />
+    <None Remove="Krizek_h.png" />
+    <None Remove="Minimalize_basic.png" />
+    <None Remove="UserIcon.png" />
+    <None Remove="Vcelka.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Obrazky\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Back.png" />
+    <Resource Include="Krizek_h.png" />
+    <Resource Include="Minimalize_basic.png" />
+    <Resource Include="UserIcon.png" />
+    <Resource Include="Vcelka.png" />
+  </ItemGroup>
+
+</Project>

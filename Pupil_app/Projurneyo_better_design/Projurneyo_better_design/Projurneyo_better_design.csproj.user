@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\uzivatel\source\repos\ZdenekMic\Projurneyo_better_design\Projurneyo_better_design\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Leaderboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\NovyProjekt.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\NPUkoly.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProjektInside.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Projekty.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Register.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Tym.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UkolSoubor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UkolSwot.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UkolText.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UkolVseobecny.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styly\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styly\Text1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styly\Stranka.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utilities\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Leaderboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\NovyProjekt.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\NPUkoly.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProjektInside.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Projekty.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Tym.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UkolSoubor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UkolSwot.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UkolText.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UkolVseobecny.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
