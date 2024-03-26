@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.Tym"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Projurneyo_better_design.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0" >
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+
+
+        </Border>
+
+        <Grid Margin="13,0,-13,0">
+            <Label Content="Přiřadit žáky do týmu"
+                   
+                   HorizontalAlignment="Left" 
+                   Margin="0,19,0,683" FontSize="72" Width="697" FontFamily="Bahnschrift"/>
+
+            <ListBox x:Name="Tymvyber" AllowDrop="True" Padding="5"
+                     Margin="16,185,748,29"
+                     SelectionChanged="Tymvyber_SelectionChanged" BorderThickness="5" BorderBrush="#FFFFC343" FontSize="20">
+                <ListBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </ListBox.Resources>
+            </ListBox>
+            <ListBox x:Name="Tymactive" Padding="5" BorderThickness="5"
+                     AllowDrop="True" Margin="354,185,410,29" SelectionChanged="Tymactive_SelectionChanged" BorderBrush="#FF33A72C" FontSize="20">
+                <ListBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </ListBox.Resources>
+            </ListBox>
+            <Label Content="Žáci"
+                HorizontalAlignment="Left"
+                Margin="28,136,0,617" FontSize="36" Width="109" FontFamily="Bahnschrift"/>
+            <Label Content="Tým"
+                HorizontalAlignment="Left"
+                Margin="359,136,0,611" FontSize="36" Width="152" FontFamily="Bahnschrift"/>
+            <Label Content="Vybrat Tým"
+                HorizontalAlignment="Left"
+                Margin="738,194,0,553" FontSize="36" Width="226" FontFamily="Bahnschrift"/>
+            <Label Content="Vybrat Třídu"
+                HorizontalAlignment="Left"
+                Margin="738,51,0,697" FontSize="36" Width="226"/>
+
+        </Grid>
+
+        <Grid Margin="884,380,10,328">
+
+
+            <Button x:Name="BtnPrirad" Content="Přiřadit" FontSize="36" FontWeight="Bold"
+                    Foreground="Black" BorderBrush="#FF33A72C" 
+                    Background="White" Margin="-128,44,68,-37" 
+                    BorderThickness="5" Click="BtnPrirad_Click" IsEnabled="False">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Button x:Name="BtnBack" Content="Odebrat" Margin="-128,152,68,-144" FontSize="36" FontWeight="Bold"
+                    Foreground="Black" BorderBrush="#FFFFC343" 
+                    Background="White" BorderThickness="5" RenderTransformOrigin="0.5,0.5" IsEnabled="False" Click="BtnBack_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+
+
+            <ComboBox x:Name="CmBxTym" Margin="-140,-134,27,163" SelectionChanged="CmBxTym_SelectionChanged" BorderBrush="{x:Null}" Foreground="Black" FontSize="29" />
+            <Button x:Name="BtnPovys" HorizontalContentAlignment="Center" Content="Povýšit na vedoucího " Margin="-168,272,27,-284" FontSize="24" FontWeight="Bold"
+                Foreground="Black" BorderBrush="#FF33A72C" 
+                Background="White" BorderThickness="5" RenderTransformOrigin="0.5,0.5" IsEnabled="False" Click="BtnPovys_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+            <ComboBox x:Name="CmbxTrida" Margin="-140,-277,27,306" SelectionChanged="CmbxTrida_SelectionChanged" BorderBrush="{x:Null}" Foreground="Black" FontSize="29" />
+
+        </Grid>
+
+    </Grid>
+</UserControl>

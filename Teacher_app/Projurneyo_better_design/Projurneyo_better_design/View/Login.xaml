@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projurneyo_better_design.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+
+            <Border Margin="10,10,10,10"
+                    BorderBrush="#FF33A72C" 
+                    BorderThickness="5"
+                    CornerRadius="20">
+                <Grid >
+                    <Label Content="Přihlášení"  FontSize="72" FontWeight="Bold" Margin="24,30,683,637"/>
+                    <TextBox x:Name="TxtBxLoUser" 
+                             GotFocus="TxtBxLoUser_GotFocus"
+                             LostFocus="TxtBxLoUser_LostFocus"
+                             Margin="24,161,264,558"
+                             Text="Uživatelské jméno..." Foreground="#FF868686" FontSize="36" KeyDown="TxtBxLoUser_KeyDown"/>
+                    <PasswordBox x:Name="TxtBxLoPass" Margin="24,282,264,437" FontSize="36" KeyDown="TxtBxLoPass_KeyDown"
+                                 />
+                    <Border BorderBrush="White" Background="#FF3468C0" BorderThickness="2" CornerRadius="20" Margin="309,549,309,66">
+
+                    </Border>
+                    <Button Margin="320,560,320,77" Content="Přihlásit" 
+                            FontSize="36" FontWeight="Bold"
+                            Background="#FF3468C0" Foreground="White" BorderBrush="{x:Null}"
+                            Click="Button_Click" />
+                    <Label x:Name="LabelDoRegistru" Content="Nemáte účet? Registrujte se."  Margin="24,409,314,302" FontSize="36" MouseDown="LabelDoRegistru_MouseDown" FontFamily="Bahnschrift"/>
+                    <Label Content="Heslo..." TextBlock.TextAlignment="Left" Margin="24,245,917,476" FontSize="24"/>
+                </Grid>
+            </Border>
+
+
+        </Border>
+    </Grid>
+</UserControl>

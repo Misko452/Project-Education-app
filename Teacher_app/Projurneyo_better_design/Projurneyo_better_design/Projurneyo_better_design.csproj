@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Back.png" />
+    <None Remove="Krizek_h.png" />
+    <None Remove="Minimalize_basic.png" />
+    <None Remove="UserIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Back.png" />
+    <Resource Include="Krizek_h.png" />
+    <Resource Include="Minimalize_basic.png" />
+    <Resource Include="UserIcon.png" />
+  </ItemGroup>
+
+</Project>

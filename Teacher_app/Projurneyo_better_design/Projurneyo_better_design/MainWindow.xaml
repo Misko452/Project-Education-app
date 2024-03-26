@@ -1,0 +1,112 @@
+﻿<Window x:Class="Projurneyo_better_design.Prihlaseni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Projurneyo_better_design.ViewModel"
+        xmlns:Menu="clr-namespace:Projurneyo_better_design.Utilities"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="842" 
+        Width="1350"
+        x:Name="ResponsiveWindow"    
+        ResizeMode="CanResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None" 
+    
+        >
+
+    <Grid Name="Hlavni" Margin="0,0,0,0">
+
+
+        <Border Background="#ffffff"
+                CornerRadius="10"
+                />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="272" />
+                <ColumnDefinition Width="1078" />
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="797*"/>
+            </Grid.RowDefinitions>
+
+            <ContentControl x:Name="control" Margin="0,0,0,0" Grid.Column="1" Grid.Row="1">
+            </ContentControl>
+            <Border Background="#FFFFC343"
+                    CornerRadius="0,0,0,10" Grid.Row="1">
+
+                <StackPanel Width="272" Margin="0,0,0,165" >
+
+                    <Grid Height="41" />
+                    <Grid Height="159" >
+                        <Image Source="/UserIcon.png" Margin="56,0,56,-1" Stretch="Fill"/>
+                    </Grid>
+                    <TextBlock x:Name="LabelUsername"
+                               Text="Username" Height="29" Margin="0,20,0,0" 
+                               HorizontalAlignment="center" FontSize="22" 
+                               TextAlignment="Center" Width="272" 
+                               FontWeight="Bold" 
+                               />
+                    <TextBlock x:Name="LabelOrg" Height="41" Margin="0,5,0,0" 
+                    HorizontalAlignment="center" FontSize="20" 
+                    TextAlignment="Center" Width="271"/>
+                    <Grid Height="41"/>
+
+
+                    <Menu:Btn x:Name="Btn1" Style="{StaticResource BtnStyle}" Width="272" Click="Btn1_Click">
+
+                        <Grid>
+                            <TextBlock Text="Upozornění" Style="{StaticResource Text_Style}" />
+                        </Grid>
+
+
+                    </Menu:Btn>
+                    <Menu:Btn x:Name="Btn3" Style="{StaticResource BtnStyle}" Width="272" Click="Btn3_Click">
+                        <Grid>
+                            <TextBlock Text="Správa žáků" Style="{StaticResource Text_Style}"/>
+                        </Grid>
+                    </Menu:Btn>
+
+                    <Menu:Btn x:Name="Btn5" Style="{StaticResource BtnStyle}" Width="272" Click="Btn5_Click">
+                        <Grid>
+                            <TextBlock Text="Správa Týmů" Style="{StaticResource Text_Style}"/>
+                        </Grid>
+                    </Menu:Btn>
+
+                    <Menu:Btn x:Name="Btn4" Style="{StaticResource BtnStyle}" Width="272" Click="Btn4_Click">
+
+                        <Grid>
+                            <TextBlock Text="Žebříček" Style="{StaticResource Text_Style}" />
+                        </Grid>
+
+                    </Menu:Btn>
+
+                </StackPanel>
+
+
+
+            </Border>
+
+            <Border Background="#FF33A72C" CornerRadius="10,10,0,0"
+                    Grid.Row="0" Grid.ColumnSpan="2">
+                <Grid>
+                    <Image x:Name="MinIcon" Margin="1310,8,0,7" HorizontalAlignment="Left" Height="30" Width="30" Source="/Krizek_h.png" MouseDown="ExitIcon_MouseDown"/>
+                    <Image x:Name="ExitIcon" Margin="1266,8,0,7" HorizontalAlignment="Left" Height="30" Width="30" Source="/Minimalize_basic.png" MouseDown="MinIcon_MouseDown"/>
+                    <TextBlock VerticalAlignment="Center" 
+                               Text="Portál Učitele"
+                               Margin="94,0,1082,0" FontSize="24" Foreground="White" />
+                    <Image x:Name="Back" Margin="10,8,0,7" HorizontalAlignment="Left" Height="30" Width="30" Source="/Back.png" Stretch="Fill" MouseDown="Back_MouseDown"/>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+
+    </Grid>
+</Window>

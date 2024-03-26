@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="Projurneyo_better_design.View.UkolVseobecny"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Projurneyo_better_design.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="797" d:DesignWidth="1078">
+    <Grid>
+        <Border CornerRadius="0,0,10,0">
+            <Border.Background>
+                <SolidColorBrush x:Name="PozadiGridu" Color="#FFFFFF"/>
+            </Border.Background>
+            <Label Content="Název týmu" Margin="619,157,37,603" FontFamily="Bahnschrift" FontSize="24"/>
+
+        </Border>
+
+        <Grid>
+            <Label x:Name="Zadani"
+                   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                   Content="Správa týmů" FontSize="72" Margin="297,7,297,695" FontFamily="Bahnschrift"/>
+
+            <Border BorderThickness="5" BorderBrush="#FFFFC343" Margin="33,144,489,21" CornerRadius="10">
+                <ListBox x:Name="SeznamTymu" Margin="1,4,1,4" SelectionChanged="SeznamTymu_SelectionChanged" BorderBrush="{x:Null}" FontSize="24"></ListBox>
+            </Border>
+
+            <Button x:Name="Odstranit" Content="Odstranit tým"
+    Margin="696,655,98,46" BorderThickness="3" 
+    BorderBrush="#FF33A72C" Background="White" FontSize="36" 
+    FontWeight="Bold" Click="Odstranit_Click" IsEnabled="False" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <Label Content="Vybrat třídu" Margin="617,337,19,427" FontFamily="Bahnschrift" FontSize="24"/>
+
+            <Border BorderThickness="5" BorderBrush="#FFFFC343" Margin="616,193,19,548" CornerRadius="10">
+                <TextBox x:Name="TxtBxNazevTymu" Margin="5,0,5,0" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" FontSize="24">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+            </Border>
+
+            <Label Content="Seznam týmů" Margin="33,107,505,653" FontFamily="Bahnschrift" FontSize="24"/>
+
+            <ComboBox x:Name="CmbXTridy" Margin="616,370,19,371" SelectionChanged="CmbXTridy_SelectionChanged" BorderBrush="#FF33A72C" Background="{x:Null}" FontSize="24"></ComboBox>
+
+
+            <Button x:Name="Pridat" Content="Přidat tým"
+    Margin="716,513,118,182" BorderThickness="3" 
+    BorderBrush="#FF33A72C" Background="White" FontSize="36" 
+    FontWeight="Bold" Click="Pridat_Click" IsEnabled="False" >
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

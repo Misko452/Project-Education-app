@@ -1,0 +1,11 @@
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\Projurneyo_better_design.exe
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\Projurneyo_better_design.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\Projurneyo_better_design.deps.json
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\Projurneyo_better_design.runtimeconfig.json
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\Projurneyo_better_design.pdb
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\System.Data.SqlClient.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\runtimes\win-arm64\native\sni.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\runtimes\win-x64\native\sni.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\runtimes\win-x86\native\sni.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\uzivatel\Desktop\Ucitel_Aplikace\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

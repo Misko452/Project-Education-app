@@ -1,0 +1,26 @@
+﻿<Application x:Class="Projurneyo_better_design.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Projurneyo_better_design"
+             StartupUri="MainWindow.xaml"
+             >
+
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Styly/Stranka.xaml" />
+                <ResourceDictionary Source="Styly/Text1.xaml" />
+                <ResourceDictionary Source="Styly/Button.xaml" />
+                <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+        
+</Application>
