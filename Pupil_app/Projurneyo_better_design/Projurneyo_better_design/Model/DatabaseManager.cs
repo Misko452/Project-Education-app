@@ -15,10 +15,10 @@ namespace Projurneyo_better_design
         public DatabaseManager() 
         {
             sestavovac = new SqlConnectionStringBuilder();
-            sestavovac.DataSource = @"Projurneyo_data.mssql.somee.com";
-            sestavovac.InitialCatalog = "Projurneyo_data";
-            sestavovac.UserID = "adminMisko_SQLLogin_1";
-            sestavovac.Password = "rrdhhkp75f";
+            sestavovac.DataSource = @"Your address of MSSQL server here (Somee.com recommendet)";
+            sestavovac.InitialCatalog = "Name od a database";
+            sestavovac.UserID = "Username to database";
+            sestavovac.Password = "password to database";
         } 
 
         public string[] OverUzivatele(string uzjmeno, string heslo)
