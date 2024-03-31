@@ -22,8 +22,8 @@ namespace Projurneyo_better_design.Model
         }
 
         string adresa = "";
-        string username = "projurneyo.borec.cz";
-        string pass = "Uloziste624";
+        string username = "Username to server";
+        string pass = "Password";
 
         WebClient client;
         DatabaseManager dbManager;
