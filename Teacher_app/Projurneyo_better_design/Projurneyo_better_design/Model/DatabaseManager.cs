@@ -15,10 +15,10 @@ namespace Projurneyo_better_design
         public DatabaseManager() 
         {
             sestavovac = new SqlConnectionStringBuilder();
-            sestavovac.DataSource = @"Projurneyo_data.mssql.somee.com";
-            sestavovac.InitialCatalog = "Projurneyo_data";
-            sestavovac.UserID = "adminMisko_SQLLogin_1";
-            sestavovac.Password = "rrdhhkp75f";
+            sestavovac.DataSource = @"Address of MSSQL server";
+            sestavovac.InitialCatalog = "Name of a database";
+            sestavovac.UserID = "Username to db";
+            sestavovac.Password = "password";
             
         }
 
