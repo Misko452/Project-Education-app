@@ -17,12 +17,12 @@ namespace Projurneyo_better_design.Model
         public Komunikace()
         {
             dbManager = new DatabaseManager();
-            adresa = "ftp://ftp5.webzdarma.cz/Projurneyo_projekty/";
+            adresa = "full addres to folder in ftp server";
         }
 
         string adresa = "";
-        string username = "projurneyo.borec.cz";
-        string pass = "Uloziste624";
+        string username = "username to server";
+        string pass = "password";
 
         WebClient client;
         DatabaseManager dbManager;
